@@ -20,6 +20,7 @@
       errorEl.addEventListener('click', handleErrorClick);
       function handleHelloClick() {
         outputEl.innerHTML = 'Hello World';
+        blepp.call()
         try {
           throw new Error('Caught');
         } catch (err) {
